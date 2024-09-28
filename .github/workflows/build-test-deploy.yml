@@ -50,7 +50,6 @@ jobs:
   deploy_testnet:
     runs-on: ubuntu-latest
     steps:
-      
       - name: Foundry Deploy Action
         uses: grossiwm/foundry-deploy-action@v1.0.0
         with:
@@ -58,4 +57,6 @@ jobs:
           private-key: ${{ secrets.PRIVATE_KEY }}
           chain-id: ${{ secrets.TESTNET_CHAIN_ID }}
           etherscan-api-key: ${{ secrets.ETHERSCAN_API_KEY }}
-          deploy-script: smartcontracts/script/deploy.s.sol:CounterScript
+          deploy-script: script/deploy.s.sol:CounterScript
+          project_dir: ./smartcontracts
+
