@@ -46,7 +46,7 @@ jobs:
         run: |
           forge test -vvv
         id: test
-  deploy:
+  deploy_testnet:
     runs-on: ubuntu-latest
     needs: check
     steps:
