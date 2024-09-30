@@ -31,7 +31,7 @@ contract BaseSetup is Utils {
         trent = _users[4];
         zero = address(0x0);
 
-        vm.label(creator, "creator");
+        vm.label(creator, "CREATOR");
         vm.label(alice, "ALICE");
         vm.label(bob, "BOB");
         vm.label(eve, "EVE");
